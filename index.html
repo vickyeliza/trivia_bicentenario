@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia del Bicentenario</title>
+  <meta name = "viewport" content = "width = device-width, user-scalable = no, initial-scale = 1.0">
+  <link rel="stylesheet" href="style.css">
+
+  </head>
+<body>
+
+  <header>
+    <h1> TRIVIA DEL BICENTENARIO DEL PERÚ </h1>
+    <h3 id="bienvenida"> Bienvenida </h3>
+
+    <hr/>
+  </header>
+
+  <section>
+  <div class="">
+
+    <img src="peru.gif" alt="Bandera del Peru" style="width:220px;height:165px;"><br><br>
+
+    <div id="countdown">0</div><br>
+
+    <h4>Pregunta 1: ¿Quién proclamó la Independencia del Perú?</h4>
+    <form>
+
+
+      <p onclick="this.style.color='#FF0000'"><input type="radio" id="miguelgrau" name="libertador" value="Miguel Grau">
+      <label for="miguelgrau">Miguel Grau</label><br>
+      <p onclick="this.style.color='#FF0000'"><input type="radio" id="simonbolivar" name="libertador" value="Simon Bolivar">
+      <label for="simonbolivar">Simon Bolivar</label><br>
+      <p onclick="this.style.color='#00FF00'"><input type="radio" id="sanmartin" name="libertador" value="San Martin">
+      <label for="sanmartin">Jose de San Martín</label><br><br>
+      <input type="submit" value="Enviar" onclick="mostrarSeleccionado(event)">
+
+        <br>
+
+     </form>
+  <div class="">
+
+    <h4>Pregunta 2.¿Quién cantó el Himno Nacional por primera vez?</h4>
+        <form>
+
+    <p onclick="this.style.color='#FF0000'"><input type="radio" id="pomadeayala" name="cantante" value="Poma de Ayala">
+    <label for="pomadeayala">Poma de Ayala</label><br>
+    <p onclick="this.style.color='#FF0000'"><input type="radio" id="juandiegoflores" name="cantante" value="Juan Diego Flores">
+    <label for="juandiegoflores">Juan Diego Flores</label><br>
+    <p onclick="this.style.color='#00FF00'"><input type="radio" id="rosamerino" name="cantante" value="Rosa Merino">
+    <label for="rosamerino">Rosa Merino</label><br><br>
+    <input type="submit" value="Enviar" onclick="elegirRespuesta(event)">
+
+       </form>
+
+
+</section>
+
+
+<section>
+
+  <div class="">
+    <h4>Pregunta 3: ¿Como se llamaban las aves con las que soñó San Martín?</h4>
+        <form>
+
+    <p onclick="this.style.color='#00FF00'"><input type="radio" id="Parihuelas" name="aves" value="Parihuelas">
+    <label for="Parihuelas">Parihuelas</label><br>
+
+    <p onclick="this.style.color='#FF0000'"><input type="radio" id="Huanay" name="aves" value="Huanay">
+    <label for="Huanay">Huanay</label><br>
+
+    <p onclick="this.style.color='#FF0000'"><input type="radio" id="Palomas" name="aves" value="Palomas">
+    <label for="Palomas">Palomas</label><br><br>
+    <input type="submit" value="Enviar" onclick="seleccionarRespuesta(event)">
+
+
+             </form>
+
+
+  <div class="">
+    <h4>Pregunta 4.¿Cuál fue el último Virrey del Perú?</h4>
+        <form>
+
+    <p onclick="this.style.color='#00FF00'">  <input type="radio" id="La Serna" name="virreyes" value="La Serna">
+    <label for="La Serna">La Serna</label><br>
+
+    <p onclick="this.style.color='#FF0000'"><input type="radio" id="Abascal" name="virreyes" value="Abascal">
+    <label for="Abascal">Abascal</label><br>
+
+    <p onclick="this.style.color='#FF0000'"><input type="radio" id="Blasco Nuñez de Vela" name="virreyes" value="Blasco Nuñez de Vela">
+    <label for="Blasco Nuñez de Vela">Blasco Nuñez de Vela</label><br><br>
+
+    <input type="submit" value="Enviar" onclick="indicarRespuesta(event)">
+
+
+       </form>
+
+
+</section>
+
+
+<section>
+  <div id="contenedorPrincipal" style="display:none"><!-- Nos permite ver el marcador -->
+        <p><input type="button" value=" R E S U L T A D O " onclick="resultado(event)"/></p>
+    <div id="respuestasCorrectas" class="marcador">
+    </div><!-- Se visualizan las respuestas correctas -->
+
+    <div id="respuestasIncorrectas"  class="marcador">
+    </div><!-- Nos permite visualizar las respuestas incorrectas -->
+  </div>
+</section>
+
+
+
+<!-- script type="text/javascript" src="js/app.js"></script -->
+
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
